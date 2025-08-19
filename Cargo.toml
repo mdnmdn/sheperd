@@ -1,0 +1,29 @@
+[package]
+name = "sheperd"
+version = "0.1.0"
+edition = "2021"
+authors = ["mdnmdn"]
+description = "A wanna be modern process manager for production applications, inspired by PM2"
+documentation = "https://docs.rs/sheperd"
+homepage = "https://github.com/yourusername/sheperd"
+repository = "https://github.com/yourusername/sheperd"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["process", "manager", "daemon", "pm2", "supervisor"]
+categories = ["command-line-utilities", "development-tools", "os"]
+exclude = [
+    "tests/*",
+    "examples/*",
+    ".github/*",
+    "docs/*",
+    "*.md",
+    "Dockerfile*",
+    ".dockerignore",
+    ".gitignore"
+]
+
+[[bin]]
+name = "sheperd"
+path = "src/main.rs"
+
+[dependencies]
